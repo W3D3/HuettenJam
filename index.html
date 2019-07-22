@@ -115,12 +115,22 @@
             </div>
           </li> -->
           <li class="nav-item">
+              <a href="#prices" class="drop down-toggle nav-link">
+                <i class="material-icons">monetization_on</i> Prices
+              </a>
+            </li>
+          <li class="nav-item">
+              <a href="#program" class="drop down-toggle nav-link">
+                <i class="material-icons">view_week</i> Program
+              </a>
+            </li>
+          <li class="nav-item">
               <a href="#sponsors" class="drop down-toggle nav-link">
                 <i class="material-icons">star</i> Sponsors
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
+                <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/GamesAAU" target="_blank" data-original-title="Follow us on Twitter">
                   <i class="fab fa-lg fa-twitter"></i>
                 <div class="ripple-container"></div></a>
               </li>
@@ -242,11 +252,11 @@
                         </div>
                       </div>
                   </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <a class="carousel-control-prev ctrl-btn" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <i class="material-icons">keyboard_arrow_left</i>
                     <span class="sr-only">Previous</span>
                   </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <a class="carousel-control-next ctrl-btn" href="#carouselExampleIndicators" role="button" data-slide="next">
                     <i class="material-icons">keyboard_arrow_right</i>
                     <span class="sr-only">Next</span>
                   </a>
@@ -260,7 +270,7 @@
             
     </div>
     <hr/>
-    <div class="section section-content">
+    <div class="section section-content" id="prices">
         <div class="pricing container">
             <div class="row">
               
@@ -353,10 +363,15 @@
             </div>
           </div>
     </div>
-    <div class="section section-content">
+    <hr />
+    <div class="section section-content" id="program">
         <div class="container">
             <div class="row">
               <div class="col-md-12">
+                  <h3 class="title">Program</h3>
+                  <h4><b>Where:</b> <a href="https://www.marktlalm.at/">Marktlalm, Turracherhöhe, Austria</a></h4>
+                  <h4><b>When:</b> September 26 - 29 , 2019 (Arrival from 15:00, Departure until 10:00)</h4>
+
                 <!--Table-->
 <table id="tablePreview" class="table">
     <!--Table head-->
@@ -658,15 +673,16 @@
   <script src="./assets/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script>
   // // Smooth scrolling to all anchors
-  // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  //   anchor.addEventListener('click', function (e) {
-  //     e.preventDefault();
-
-  //     document.querySelector(this.getAttribute('href')).scrollIntoView({
-  //         behavior: 'smooth'
-  //     });
-  //   });
-  // });
+  $('a[href^="#"]:not(.ctrl-btn)').on('click',function(e) {
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+    }, 900, 'swing', function () {
+      window.location.hash = target;
+    });
+    });
   </script>
    <!-- Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/
   <script src="./assets/nouislider.min.js" type="text/javascript"></script> -->
