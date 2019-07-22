@@ -1,0 +1,62 @@
+.index-page .header-filter:after, .presentation-page .header-filter:after {
+    background: rgba(0, 0, 0, 0.88);
+    background: linear-gradient(45deg, #090126e0, #000007f1);
+    background: -webkit-linear-gradient(135deg, rgba(0, 26, 66, 0.493), rgba(0, 0, 0, 0.5))
+}
+
+.btn.btn-rose {
+    color: #fff;
+    background-color: rgb(20, 71, 182);
+    border-color: hsla(221, 95%, 62%, 0.31);
+    box-shadow: 0 2px 2px 0 hsla(221, 100%, 46%, 0.16), 0 3px 1px -2px hsla(221, 100%, 46%, 0.16), 0 1px 5px 0 hsla(221, 100%, 46%, 0.16)
+}
+
+.navbar-brand img {
+    fill: rgb(20, 71, 182);
+}
+
+.btn.btn-rose.focus, .btn.btn-rose:focus, .btn.btn-rose:hover {
+    color: #fff;
+    background-color: #000157;
+    border-color: #004bed
+}
+
+.btn.btn-rose:active, .btn.btn-rose:focus, .btn.btn-rose:hover {
+    box-shadow: 0 14px 26px -12px #2e56f76b, 0 4px 23px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px hsla(231, 89%, 55%, 0.8)
+}
+
+.btn.btn-rose.active, .btn.btn-rose:active, .open > .btn.btn-rose.dropdown-toggle,
+.show > .btn.btn-rose.dropdown-toggle {
+    color: #fff;
+    background-color: #004bed4f;
+    border-color: rgba(0, 30, 95, 0.8);
+    /* box-shadow: 0 2px 2px 0 rgba(233, 30, 99, .14), 0 3px 1px -2px rgba(233, 30, 99, .2), 0 1px 5px 0 rgba(233, 30, 99, .12) */
+}
+
+.btn.btn-rose.active.focus, .btn.btn-rose.active:focus, .btn.btn-rose.active:hover,
+.btn.btn-rose:active.focus, .btn.btn-rose:active:focus, .btn.btn-rose:active:hover,
+.open > .btn.btn-rose.dropdown-toggle.focus, .open > .btn.btn-rose.dropdown-toggle:focus,
+.open > .btn.btn-rose.dropdown-toggle:hover, .show > .btn.btn-rose.dropdown-toggle.focus,
+.show > .btn.btn-rose.dropdown-toggle:focus, .show > .btn.btn-rose.dropdown-toggle:hover {
+    color: #fff;
+    background-color: rgb(38, 44, 106);
+    border-color: hsla(221, 96%, 67%, 0.8);
+}
+
+.dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover, .dropdown-menu a:active, .dropdown-menu a:focus, .dropdown-menu a:hover {
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);
+    background-color: rgba(60, 119, 246, 0.911);
+    color: #fff;
+}
+
+h3, h4, h5, h6 {
+    color: hsl(0, 0%, 35%) !important;
+}
+
+p {
+    color: hsl(0, 0%, 35%) !important;
+}
+
+.carousel-item h4 {
+    color: white !important;
+}
